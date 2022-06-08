@@ -348,7 +348,8 @@ main .beneficios {
           align-items: center;
 }
 
-.lista-de-profissionais, .sobre-nos {
+.lista-de-profissionais,
+.sobre-nos {
   width: 100%;
   padding-top: 13rem;
   display: -webkit-box;
@@ -366,7 +367,8 @@ main .beneficios {
           flex-direction: column;
 }
 
-.lista-de-profissionais > h1, .sobre-nos > h1 {
+.lista-de-profissionais > h1,
+.sobre-nos > h1 {
   font-size: 3rem;
   margin-bottom: 4rem;
 }
@@ -406,8 +408,8 @@ main .beneficios {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transition: .2s;
-  transition: .2s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .profissional:hover {
@@ -422,7 +424,7 @@ main .beneficios {
   min-width: 92px;
   min-height: 92px;
   background: #ccc;
-  border-radius: .25rem;
+  border-radius: 0.25rem;
 }
 
 .profissional .info {
@@ -445,5 +447,96 @@ main .beneficios {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.cadastro-profissional {
+  background: #f2f5fe;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10rem 1rem 4rem;
+}
+
+.cadastro-profissional > h1 {
+  font-size: 3rem;
+  max-width: 550px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.cadastro-profissional > p {
+  margin-bottom: 3rem;
+  max-width: 550px;
+  font-size: 1.25rem;
+  opacity: .6;
+}
+
+.cadastro-profissional form {
+  width: 100%;
+  max-width: 1024px;
+}
+
+.cadastro-profissional span {
+  display: inline-block;
+  width: 100%;
+  opacity: .5;
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 1.1rem;
+}
+
+.cadastro-profissional button {
+  margin-top: 1rem;
+  width: 100%;
+  height: 3.5rem;
+  background: #25255d;
+  border: none;
+  font-size: 1rem;
+  color: #fff;
+  border-radius: .5rem;
+  text-transform: uppercase;
+}
+
+.input-group + .input-group {
+  margin-top: 1.5rem;
+}
+
+.input-group label {
+  display: inline-block;
+  margin-bottom: 0.25rem;
+  font-weight: bold;
+}
+
+.input-group input:not([type="checkbox"]) {
+  width: 100%;
+  height: 3rem;
+  font-size: 1rem;
+  padding-left: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #25255d73;
+}
+
+.input-group input:not([type="checkbox"]):focus {
+  outline: none;
+  border-color: #25255d;
+}
+
+.input-group .check-input {
+  margin-top: .5rem;
+}
+
+.input-group .check-input label {
+  font-weight: 400;
+  font-size: .9rem;
 }
 /*# sourceMappingURL=styles.css.map */

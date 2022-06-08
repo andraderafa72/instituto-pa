@@ -98,7 +98,8 @@ main {
       padding: 0.5rem 1.5rem;
       border-bottom: 2.5px solid transparent;
 
-      &:hover, &.active {
+      &:hover,
+      &.active {
         border-bottom: 2.5px solid #fff;
       }
     }
@@ -288,7 +289,8 @@ main {
   align-items: center;
 }
 
-.lista-de-profissionais, .sobre-nos {
+.lista-de-profissionais,
+.sobre-nos {
   width: 100%;
   padding-top: 13rem;
   display: flex;
@@ -302,8 +304,8 @@ main {
   }
 }
 
-.sobre-nos{
-  p{
+.sobre-nos {
+  p {
     max-width: 1024px;
     line-height: 150%;
   }
@@ -327,9 +329,9 @@ main {
   display: flex;
   gap: 1rem;
   align-items: center;
-  transition: .2s;
+  transition: 0.2s;
 
-  &:hover{
+  &:hover {
     transform: translateY(-2px);
     border-color: #25255d;
   }
@@ -340,10 +342,10 @@ main {
     min-width: 92px;
     min-height: 92px;
     background: #ccc;
-    border-radius: .25rem;
+    border-radius: 0.25rem;
   }
 
-  .info{
+  .info {
     min-width: 150px;
   }
 
@@ -352,10 +354,95 @@ main {
     // max-width: 450px;
   }
 
-  .social{
+  .social {
     margin-left: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+}
+
+.cadastro-profissional {
+  background: #f2f5fe;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10rem 1rem 4rem;
+
+  > h1{
+    font-size: 3rem;
+    max-width: 550px;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  > p{
+    margin-bottom: 3rem;
+    max-width: 550px;
+    font-size: 1.25rem;
+    opacity: .6;
+  }
+  
+  form{
+    width: 100%;
+    max-width: 1024px;
+  }
+
+  span{
+    display: inline-block;
+    width: 100%;
+    opacity: .5;
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1.1rem;
+  }
+
+  button {
+    margin-top: 1rem;
+    width: 100%;
+    height: 3.5rem;
+    background: #25255d;
+    border: none;
+    font-size: 1rem;
+    color: #fff;
+    border-radius: .5rem;
+    text-transform: uppercase;
+  }
+}
+
+.input-group {
+  & + .input-group {
+    margin-top: 1.5rem;
+  }
+
+  label{
+    display: inline-block;
+    margin-bottom: 0.25rem;
+    font-weight: bold;
+  }
+
+  input:not([type="checkbox"]) {
+    width: 100%;
+    height: 3rem;
+    font-size: 1rem;
+    padding-left: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid #25255d73;
+
+    &:focus {
+      outline: none;
+      border-color: #25255d;
+    }
+  }
+
+  .check-input{
+    margin-top: .5rem;
+
+    label{
+      // color: red;
+      font-weight: 400;
+      font-size: .9rem;
+    }
   }
 }
